@@ -31,9 +31,17 @@
             margin: 0;
             padding: 0;
         }
+        .subtitle {
+            font-family: 'Roboto', sans-serif; /* Use Roboto font */
+            font-size: 1.5em; /* Smaller than title */
+            font-weight: bold;
+            color: #000; /* Black color */
+            margin: 10px 0;
+            padding: 0;
+        }
         .container {
             max-width: 800px;
-            margin: 100px auto 20px auto; /* Adjust top margin based on header height */
+            margin: 150px auto 20px auto; /* Adjust top margin based on header and subtitle height */
             padding: 20px;
             padding-left: 80px; /* Increased left padding */
             padding-right: 80px; /* Increased right padding */
@@ -51,6 +59,9 @@
             .header h1 {
                 font-size: 2em;
             }
+            .subtitle {
+                font-size: 1.2em; /* Adjust subtitle font size for smaller screens */
+            }
             .container {
                 padding-left: 30px; /* Adjust padding for smaller screens */
                 padding-right: 30px; /* Adjust padding for smaller screens */
@@ -64,6 +75,7 @@
 <body>
     <div class="header">
         <h1>ARCHIVE</h1>
+        <div class="subtitle">Legacy Preservation in Immersive Virtual Reality</div>
     </div>
     <div class="container">
         <p>
