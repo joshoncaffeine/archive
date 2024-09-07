@@ -9,13 +9,12 @@
             font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f9fc;
+            background-color: #ffffff; /* Full white background */
             color: #333;
             text-align: center;
         }
         .header {
-            background-color: #ffffff;
-            border-bottom: 1px solid #e0e0e0;
+            background-color: #ffffff; /* Ensure header matches the body background */
             padding: 20px 0;
             position: fixed;
             width: 100%;
@@ -34,6 +33,9 @@
             max-width: 800px;
             margin: 100px auto 20px auto; /* Adjust top margin based on header height */
             padding: 20px;
+            padding-left: 30px; /* Add left padding */
+            padding-right: 30px; /* Add right padding */
+            background-color: #ffffff; /* Ensure container matches background */
         }
         p {
             font-size: 1em; /* Adjust font size */
@@ -46,6 +48,10 @@
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2em;
+            }
+            .container {
+                padding-left: 15px; /* Adjust padding for smaller screens */
+                padding-right: 15px; /* Adjust padding for smaller screens */
             }
             p {
                 font-size: 0.9em;
@@ -60,10 +66,9 @@
     <div class="container">
         <p>
             Archive is a legacy preservation platform in immersive virtual reality. 
-            We've started building a virtual reality app for curating and exploring photos, videos, info and memory of individuals before and after the event of passing. A personalised digital cemetery provides a space where memories and legacies can be preserved 
+            We've started building a virtual reality app for curating and exploring photos, videos, info, and memory of individuals before and after the event of passing. A personalized digital cemetery provides a space where memories and legacies can be preserved 
             and shared across generations.
             <br><br>
-            
         </p>
     </div>
 </body>
