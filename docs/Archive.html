@@ -3,27 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legacy Preservation</title>
+    <title>Archive - Legacy Preservation</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Eastman+Grotesque:wght@900&family=Montserrat:wght@400&display=swap');
+
         body {
             margin: 0;
             padding: 0;
-            background-color: #ffffff; /* White background */
-            color: #000000; /* Black text */
-            font-family: Arial, sans-serif; /* Font style */
+            font-family: 'Montserrat', sans-serif;
+            background-color: #d9d9d9; /* Background color */
+            color: #182930; /* Dark blue color */
             display: flex;
-            align-items: center;
+            align-items: flex-start; /* Align content to top of the page */
             justify-content: center;
-            height: 100vh;
-            text-align: center;
+            min-height: 100vh;
         }
-        h1 {
-            font-size: 3rem;
+
+        .container {
+            text-align: center;
+            width: 100%;
+        }
+
+        header {
+            background-color: #e7e7e7; /* Top header section color */
+            padding: 20px 0;
+            display: flex;
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+            gap: 20px; /* Space between logo and title */
+        }
+
+        header h1 {
+            font-family: 'Eastman Grotesque', sans-serif;
+            font-size: 2.1rem; /* Reduced title size by 30% from 3rem */
+            font-weight: 900;
+            color: #182930; /* Dark blue color */
+            margin: 0;
+        }
+
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .body-section {
+            background-color: #d9d9d9;
+            padding: 60px 20px;
+            color: #182930; /* Dark blue color */
+            text-align: center; /* Center all text in the body section */
+            max-width: 800px; /* Limit text width for readability */
+            margin: 0 auto;
+        }
+
+        .body-section p {
+            font-size: 0.96rem; /* Reduced by 20% from 1.2rem */
+            line-height: 1.8;
+        }
+
+        .body-section h2 {
+            font-size: 1.2rem; /* Keep or adjust size if needed */
+            font-weight: bold; /* Make text bold */
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.8rem; /* Reduced by 20% from 1rem */
+            color: #182930;
         }
     </style>
 </head>
 <body>
-    <h1>Archive</h1>
-    <p>Legacy preservation in immersive virtual reality.</p>
+    <div class="container">
+        <header>
+            <img src="asset/images/logo.png" alt="Archive Logo" class="logo">
+            <h1>ARCHIVE</h1>
+        </header>
+
+        <section class="body-section">
+            <p>Archive is a digital solution for cemeteries. We've started building a virtual reality app for curating and exploring photos, videos, info, and memories of individuals before and after passing. A personalized virtual cemetery provides a space where memories and legacies can be preserved and shared across generations.</p>
+            <h2 style="font-family: 'Montserrat', sans-serif; color: #182930;">Legacy Preservation in Immersive Virtual Reality.</h2>
+        </section>
+
+        <footer>
+            © 2024 Archive. All Rights Reserved.
+        </footer>
+    </div>
 </body>
 </html>
