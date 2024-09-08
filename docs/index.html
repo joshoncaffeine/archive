@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap">
     <style>
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif; /* Use Helvetica font */
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #ffffff; /* Full white background */
@@ -24,50 +24,97 @@
             z-index: 1000;
         }
         .header h1 {
-            font-family: 'Roboto', sans-serif; /* Use Roboto font */
+            font-family: 'Roboto', sans-serif;
             font-size: 2.5em;
             font-weight: 900; /* Extra bold */
             color: #000; /* Black color */
             margin: 0;
-            padding: 0;
         }
         .subtitle {
-            font-family: 'Roboto', sans-serif; /* Use Roboto font */
-            font-size: 1.5em; /* Smaller than title */
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5em;
             font-weight: bold;
-            color: #000; /* Black color */
+            color: #000;
             margin: 10px 0;
-            padding: 0;
         }
         .container {
-            max-width: 800px;
-            margin: 150px auto 20px auto; /* Adjust top margin based on header and subtitle height */
-            padding: 20px;
-            padding-left: 80px; /* Increased left padding */
-            padding-right: 80px; /* Increased right padding */
-            background-color: #ffffff; /* Ensure container matches background */
+            max-width: 1000px;
+            margin: 150px auto 20px auto;
+            padding: 20px 80px;
+            background-color: #ffffff;
         }
         p {
-            font-size: 1em; /* Adjust font size */
+            font-size: 1em;
             line-height: 1.6;
-            font-family: 'Helvetica Neue', Arial, sans-serif; /* Use Helvetica font for paragraph text */
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             color: #444;
             margin-top: 0;
             text-align: justify;
+        }
+        .section-title {
+            font-size: 2em;
+            font-weight: 700;
+            margin: 40px 0 20px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .feature {
+            width: 30%;
+            margin: 20px;
+            text-align: left;
+        }
+        .feature-icon {
+            font-size: 50px;
+            color: #333;
+        }
+        .feature h3 {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .feature p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .how-it-works {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .step {
+            width: 30%;
+            margin: 20px;
+            text-align: left;
+        }
+        .footer {
+            background-color: #f1f1f1;
+            padding: 40px 20px;
+            margin-top: 40px;
+        }
+        .footer h3 {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .footer p {
+            font-size: 0.9em;
+            color: #666;
         }
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2em;
             }
             .subtitle {
-                font-size: 1.2em; /* Adjust subtitle font size for smaller screens */
+                font-size: 1.2em;
             }
             .container {
-                padding-left: 30px; /* Adjust padding for smaller screens */
-                padding-right: 30px; /* Adjust padding for smaller screens */
+                padding-left: 30px;
+                padding-right: 30px;
             }
-            p {
-                font-size: 0.9em;
+            .feature, .step {
+                width: 100%;
             }
         }
     </style>
@@ -77,13 +124,59 @@
         <h1>ARCHIVE</h1>
         <div class="subtitle">Legacy Preservation in Immersive Virtual Reality</div>
     </div>
+
+    <!-- Main Content -->
     <div class="container">
+        <!-- Introduction -->
         <p>
             Archive is a digital solution for cemeteries, legacy preservation in immersive virtual reality. 
             We've started building a virtual reality app for curating and exploring photos, videos, info, and memory of individuals before and after the event of passing. A personalized virtual cemetery provides a space where memories and legacies can be preserved 
             and shared across generations.
-            <br><br>
         </p>
+
+        <!-- Features Section -->
+        <div class="section-title">Key Features</div>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🌐</div>
+                <h3>Immersive Virtual Reality</h3>
+                <p>Experience the future of legacy preservation in an immersive VR environment.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📜</div>
+                <h3>Will Transfer System</h3>
+                <p>Secure and automated will transfer and legacy handover system for future generations.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🌳</div>
+                <h3>Family Tree System</h3>
+                <p>Visualize your family connections across generations in an interactive family tree.</p>
+            </div>
+        </div>
+
+        <!-- How It Works Section -->
+        <div class="section-title">How It Works</div>
+        <div class="how-it-works">
+            <div class="step">
+                <h3>Step 1: Create Your Legacy</h3>
+                <p>Begin by uploading photos, videos, and documents that represent your life and story.</p>
+            </div>
+            <div class="step">
+                <h3>Step 2: Customize Your Memorial</h3>
+                <p>Design and personalize your own virtual memorial, choosing from various themes and styles.</p>
+            </div>
+            <div class="step">
+                <h3>Step 3: Share with Loved Ones</h3>
+                <p>Invite family members and loved ones to explore and interact with your digital legacy in VR.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <h3>Contact Us</h3>
+        <p>Email: joshng18@hotmail.com | Phone: +447452013494</p>
+        <p>© 2024 ARCHIVE. All Rights Reserved.</p>
     </div>
 </body>
 </html>
