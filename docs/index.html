@@ -3,180 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARCHIVE</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap">
+    <title>Archive - Legacy Preservation</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Eastman+Grotesque:wght@900&family=Montserrat:wght@400&display=swap');
+
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffffff; /* Full white background */
-            color: #333;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #d9d9d9; /* Background color */
+            color: #182930; /* Dark blue color */
+            display: flex;
+            align-items: flex-start; /* Align content to top of the page */
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+        }
+
+        header {
+            background-color: #e7e7e7; /* Top header section color */
+            padding: 20px 0;
+            display: flex;
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+            gap: 20px; /* Space between logo and title */
+        }
+
+        header h1 {
+            font-family: 'Eastman Grotesque', sans-serif;
+            font-size: 2.1rem; /* Title size */
+            font-weight: 900; /* Maximal boldness */
+            color: #182930; /* Dark blue color */
+            margin: 0;
+            text-transform: uppercase; /* Ensure title appears in uppercase if desired */
+        }
+
+        .logo {
+            max-width: 76.5px; /* Further reduced size by 15% from 90px */
+            height: auto;
+        }
+
+        .body-section {
+            background-color: #d9d9d9;
+            padding: 60px 20px;
+            color: #182930; /* Dark blue color */
+            text-align: center; /* Center all text in the body section */
+            max-width: 800px; /* Limit text width for readability */
+            margin: 0 auto;
+        }
+
+        .body-section p {
+            font-size: 0.96rem; /* Reduced by 20% from 1.2rem */
+            line-height: 1.8;
+        }
+
+        .body-section h2 {
+            font-size: 1.2rem; /* Keep or adjust size if needed */
+            font-weight: bold; /* Make text bold */
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.8rem; /* Reduced by 20% from 1rem */
+            color: #182930;
             text-align: center;
         }
-        .header {
-            background-color: #ffffff; /* Ensure header matches the body background */
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-        .header h1 {
-            font-family: 'Roboto', sans-serif;
-            font-size: 2.5em;
-            font-weight: 900; /* Extra bold */
-            color: #000; /* Black color */
-            margin: 0;
-        }
-        .subtitle {
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #000;
-            margin: 10px 0;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 150px auto 20px auto;
-            padding: 20px 80px;
-            background-color: #ffffff;
-        }
-        p {
-            font-size: 1em;
-            line-height: 1.6;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            color: #444;
-            margin-top: 0;
-            text-align: justify;
-        }
-        .section-title {
-            font-size: 2em;
-            font-weight: 700;
-            margin: 40px 0 20px;
-        }
-        .features {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .feature {
-            width: 30%;
-            margin: 20px;
-            text-align: left;
-        }
-        .feature-icon {
-            font-size: 50px;
-            color: #333;
-        }
-        .feature h3 {
-            font-size: 1.5em;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        .feature p {
-            font-size: 0.9em;
-            color: #666;
-        }
-        .how-it-works {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .step {
-            width: 30%;
-            margin: 20px;
-            text-align: left;
-        }
-        .footer {
-            background-color: #f1f1f1;
-            padding: 40px 20px;
-            margin-top: 40px;
-        }
-        .footer h3 {
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-        .footer p {
-            font-size: 0.9em;
-            color: #666;
-        }
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2em;
-            }
-            .subtitle {
-                font-size: 1.2em;
-            }
-            .container {
-                padding-left: 30px;
-                padding-right: 30px;
-            }
-            .feature, .step {
-                width: 100%;
-            }
+
+        footer .contact {
+            margin-bottom: 10px; /* Space between contact details and rights reserved text */
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>ARCHIVE</h1>
-        <div class="subtitle">Legacy Preservation in Immersive Virtual Reality</div>
-    </div>
-
-    <!-- Main Content -->
     <div class="container">
-        <!-- Introduction -->
-        <p>
-            Archive is a digital solution for cemeteries, legacy preservation in immersive virtual reality. 
-            We've started building a virtual reality app for curating and exploring photos, videos, info, and memory of individuals before and after the event of passing. A personalized virtual cemetery provides a space where memories and legacies can be preserved 
-            and shared across generations.
-        </p>
+        <header>
+            <img src="https://i.imgur.com/AUrKUT0.png" alt="Archive Logo" class="logo">
+            <h1>ARCHIVE</h1>
+        </header>
 
-        <!-- Features Section -->
-        <div class="section-title">Key Features</div>
-        <div class="features">
-            <div class="feature">
-                <div class="feature-icon">🌐</div>
-                <h3>Immersive Virtual Reality</h3>
-                <p>Experience the future of legacy preservation in an immersive VR environment.</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">📜</div>
-                <h3>Will Transfer System</h3>
-                <p>Secure and automated will transfer and legacy handover system for future generations.</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">🌳</div>
-                <h3>Family Tree System</h3>
-                <p>Visualize your family connections across generations in an interactive family tree.</p>
-            </div>
-        </div>
+        <section class="body-section">
+            <p>Archive is a digital solution for cemeteries. We've started building a virtual reality app for curating and exploring photos, videos, info, and memories of individuals before and after passing. A personalized virtual cemetery provides a space where memories and legacies can be preserved and shared across generations.</p>
+            <h2 style="font-family: 'Montserrat', sans-serif; color: #182930;">Legacy Preservation in Immersive Virtual Reality.</h2>
+        </section>
 
-        <!-- How It Works Section -->
-        <div class="section-title">How It Works</div>
-        <div class="how-it-works">
-            <div class="step">
-                <h3>Step 1: Create Your Legacy</h3>
-                <p>Begin by uploading photos, videos, and documents that represent your life and story.</p>
-            </div>
-            <div class="step">
-                <h3>Step 2: Customize Your Memorial</h3>
-                <p>Design and personalize your own virtual memorial, choosing from various themes and styles.</p>
-            </div>
-            <div class="step">
-                <h3>Step 3: Share with Loved Ones</h3>
-                <p>Invite family members and loved ones to explore and interact with your digital legacy in VR.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer Section -->
-    <div class="footer">
-        <h3>Contact Us</h3>
-        <p>Email: joshng18@hotmail.com | Phone: +447452013494</p>
-        <p>© 2024 ARCHIVE. All Rights Reserved.</p>
+        <footer>
+            <p class="contact">Email: joshng18@hotmail.com | Phone: +447452013494</p>
+            <p>© 2024 Archive. All Rights Reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
