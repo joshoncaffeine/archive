@@ -35,14 +35,15 @@
 
         header h1 {
             font-family: 'Eastman Grotesque', sans-serif;
-            font-size: 2.1rem; /* Reduced title size by 30% from 3rem */
-            font-weight: 900;
+            font-size: 2.1rem; /* Title size */
+            font-weight: 900; /* Maximal boldness */
             color: #182930; /* Dark blue color */
             margin: 0;
+            text-transform: uppercase; /* Ensure title appears in uppercase if desired */
         }
 
         .logo {
-            max-width: 150px;
+            max-width: 76.5px; /* Further reduced size by 15% from 90px */
             height: auto;
         }
 
@@ -69,13 +70,18 @@
             margin-top: 20px;
             font-size: 0.8rem; /* Reduced by 20% from 1rem */
             color: #182930;
+            text-align: center;
+        }
+
+        footer .contact {
+            margin-bottom: 10px; /* Space between contact details and rights reserved text */
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="asset/images/logo.png" alt="Archive Logo" class="logo">
+            <img src="https://i.imgur.com/AUrKUT0.png" alt="Archive Logo" class="logo">
             <h1>ARCHIVE</h1>
         </header>
 
@@ -85,7 +91,8 @@
         </section>
 
         <footer>
-            © 2024 Archive. All Rights Reserved.
+            <p class="contact">Email: joshng18@hotmail.com | Phone: +447452013494</p>
+            <p>© 2024 Archive. All Rights Reserved.</p>
         </footer>
     </div>
 </body>
