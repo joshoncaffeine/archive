@@ -7,21 +7,25 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Eastman+Grotesque:wght@900&family=Montserrat:wght@400&display=swap');
 
-        body {
+        html, body {
             margin: 0;
             padding: 0;
+            height: 100%; /* Full height for body to use flexbox */
+        }
+
+        body {
             font-family: 'Montserrat', sans-serif;
             background-color: #d9d9d9; /* Background color */
             color: #182930; /* Dark blue color */
             display: flex;
-            align-items: flex-start; /* Align content to top of the page */
-            justify-content: center;
-            min-height: 100vh;
+            flex-direction: column; /* Stack content vertically */
+            justify-content: space-between; /* Push footer to the bottom */
         }
 
         .container {
             text-align: center;
             width: 100%;
+            flex: 1; /* Allow the container to grow and take up available space */
         }
 
         header {
@@ -67,14 +71,19 @@
         }
 
         footer {
-            margin-top: 20px;
             font-size: 0.8rem; /* Reduced by 20% from 1rem */
             color: #182930;
             text-align: center;
+            padding: 10px 0; /* Simple padding for spacing */
         }
 
-        footer .contact {
-            margin-bottom: 10px; /* Space between contact details and rights reserved text */
+        footer a {
+            color: #182930; /* Match text color */
+            text-decoration: none; /* Remove underline */
+        }
+
+        footer a:hover {
+            text-decoration: underline; /* Add underline on hover */
         }
     </style>
 </head>
@@ -89,11 +98,12 @@
             <p>Archive is a digital solution for cemeteries. We've started building a virtual reality app for curating and exploring photos, videos, info, and memories of individuals before and after passing. A personalized virtual cemetery provides a space where memories and legacies can be preserved and shared across generations.</p>
             <h2 style="font-family: 'Montserrat', sans-serif; color: #182930;">Legacy Preservation in Immersive Virtual Reality.</h2>
         </section>
-
-        <footer>
-            <p class="contact">Email: joshng18@hotmail.com | Phone: +447452013494</p>
-            <p>© 2024 Archive. All Rights Reserved.</p>
-        </footer>
     </div>
+    <a href="https://imgur.com/a/rockziZ"></a>
+    <footer>
+        <p>Email: <a href="mailto:joshng18@hotmail.com">joshng18@hotmail.com</a> | Phone: <a href="tel:+447452013494">+447452013494</a></p>
+
+        <p>© 2024 Archive. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
